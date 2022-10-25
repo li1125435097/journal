@@ -1,0 +1,16 @@
+@startuml
+start
+
+repeat :媒体端创建域名;
+repeat while(boss端审核) is (不通过) not(通过)
+
+repeat :媒体端创建计费名;
+repeat while(boss端审核) is (不通过) not(通过)
+
+repeat :媒体端创建广告位;
+repeat while(boss端审核) is (不通过) not(通过)
+
+:投放;
+:查看统计;
+end
+@enduml
